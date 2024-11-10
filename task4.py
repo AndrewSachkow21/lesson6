@@ -3,6 +3,7 @@ with open('task4.txt', encoding='utf8') as file:
     words = []
     for line in file:
         words += line.split()
+    print(file.read())
 starts_with_wowels_count = sum(
 1 for word in words
 if word[0].lower() in WOWELS
